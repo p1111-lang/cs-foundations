@@ -1,10 +1,16 @@
 def calculate_average(grade):
+    if not grade:
+        return 0
     return sum(grade.values()) / len(grade)
 
 def maximum(grade):
+    if not grade:
+        return None
     return max(grade.values())
 
 def minimum(grade):
+    if not grade:
+        return None
     return min(grade.values())
 
 def pass_fail(grade):
